@@ -16,8 +16,12 @@ One of my first projects so I made sure to make it as visually appealing and ref
 
 # Screenshoots - Mobile
 **Start of the Game**
+
+
 ![Guess the Number mobile start screen](https://user-images.githubusercontent.com/58609875/141721485-60513597-260e-4822-9b52-a9789f7fc20f.png)
 
 **End of the Game**
+
+
 ![Guess the Number mobile finished game](https://user-images.githubusercontent.com/58609875/141721521-95c7ea73-8aa7-4dc7-bd9a-4c53ddf15385.png)
 
