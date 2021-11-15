@@ -3,7 +3,6 @@ let correctNumber;
 
 window.onload = () => {
   correctNumber = randomNumber();
-  console.log(correctNumber);
   document.querySelector(".button-checkme").addEventListener("click", playGame);
   document.querySelector(".button-restart").addEventListener("click", restartGame);
 };
@@ -12,21 +11,22 @@ const randomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 const playGame = () => {
   let newGuess = document.querySelector(".input-guess").value;
-  console.log(newGuess);
   displayResults(newGuess);
   saveGuessHistory(newGuess);
-  console.log(guessList);
   displayHistory(guessList);
 };
 
 const restartGame = () => {
+  correctNumber = randomNumber();
   resetDialogDisplay();
+  saveGuessHistory();
+  guessList = [];
+  displayHistory();
 };
 
 const saveGuessHistory = (guess) => {
   guessList.push(guess);
 };
-
 
 const displayHistory = () => {
   let nextguess = guessList.length - 1;
