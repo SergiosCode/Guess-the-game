@@ -27,34 +27,16 @@ const saveGuessHistory = (guess) => {
   guessList.push(guess);
 };
 
-// const displayHistory = (guessList) => {
-//   for (let i = guessList.length - 1; i >= 0; i--) {
-//     let guessListDialog = `<li class='new-history'>` + `You have guessed ${guessList[i]}!` + `</li>`;
-//     document.querySelector(".guess-history").innerHTML = guessListDialog;
-//   }
-// };
 
-// const displayHistory = (guess) => {
-//   guess.forEach((item) => {
-//     let guessListDialog = `<li class='new-history'>` + `You have guessed ${item}!` + `</li>`;
-//     document.querySelector(".guess-history").innerHTML = guessListDialog;
-//     let li = document.createElement("li");
-//     li.innerHTML = guessListDialog;
-//     document.querySelector(".guess-history").appendChild(document.createTextNode(guessListDialog));
-//   });
-// };
-
-const displayHistory = (guess) => {
-  guess.forEach((item) => {
-    const ul = document.querySelector(".guess-history");
-    const li = document.createElement("li");
-    const children = ul.children.length + 1;
-    let guessListDialog = `<li class='new-history'>` + `You have guessed ${item}!` + `</li>`;
-
-    li.setAttribute("id", "element" + children);
-    li.appendChild(document.createTextNode("Element " + children));
-    ul.appendChild(li);
-  });
+const displayHistory = () => {
+  let nextguess = guessList.length - 1;
+  let list = "<ul class='guess-history'>";
+  while (nextguess >= 0) {
+    list += "<li class='new-history'>" + "You guessed " + guessList[nextguess] + "</li>";
+    nextguess -= 1;
+  }
+  list += "</ul>";
+  document.querySelector(".guess-history").innerHTML = list;
 };
 
 const displayResults = (newGuess) => {

@@ -119,6 +119,14 @@
   border-radius: 5px;
 }
 
+.guess-history{
+  background-color: #16233b;
+  height: 40vh;
+  
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
 .new-history {
   background-color: #8ca1ff;
   font-size: 20px;
