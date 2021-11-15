@@ -6,12 +6,15 @@ One of my first projects so I made sure to make it as visually appealing and ref
 
 # Screenshots
 **Start of the Game**
+
 ![Guess the Number - Start Game](https://user-images.githubusercontent.com/58609875/141721269-4719b099-9da8-48c7-bc12-bc8d190e6a73.png)
 
 **Failed Guess**
+
 ![Guess the Number -Failed Game (2)](https://user-images.githubusercontent.com/58609875/141721385-ce1ac371-0be4-472f-9c36-b72868b20658.png)
 
 **Finished Game**
+
 ![Guess the Number - Finished Game](https://user-images.githubusercontent.com/58609875/141721421-73285fe3-b832-469f-91c1-24005f1965f9.png)
 
 # Screenshoots - Mobile
