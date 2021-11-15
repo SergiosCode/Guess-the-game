@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  background-color: black;
+}
+
+.navbar {
+  height: 10vh;
+  background-color: #0e1625;
+  border-bottom: 1px royalblue solid;
+}
+
+.navbar h1 {
+  font-size: calc(0.5 * (4.5vh + 6.1vw));
+  color: #ffffff;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 130px;
+  color: aquamarine;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.input-guess {
+  height: 5vh;
+  width: 80vw;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+  border: none;
+  color: #525865;
+  border: 2px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  outline: none;
+  padding: 0.2em 0.45em 0.3em;
+  transition: 0.18s ease-out;
+
+  margin-bottom: 2vh;
+}
+
+.input-guess:focus {
+  color: #4b515d;
+  border: 1px solid #b8b6b6;
+  box-shadow: inset 5px 2px 4px rgba(24, 129, 250, 0.01), 0px 0px 15px rgb(0, 105, 226);
+}
+
+.button-container {
+  width: 95vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.button-container button {
+  width: 22vh;
+  height: 5vh;
+  border: none;
+  font-size: 25px;
+  margin: 0 2vh;
+  border-radius: 5px;
+}
+
+.button-checkme {
+  background-color: #0e1625;
+  margin-right: 5vh;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.button-checkme:hover {
+  background-color: #16233b;
+  cursor: pointer;
+}
+
+.button-restart {
+  transition: 250ms;
+}
+
+.button-restart:hover {
+  cursor: pointer;
+  background-color: #acb1bd;
+}
+
+.alert-wrong {
+  height: 6vh;
+  background-color: rgb(145, 52, 40);
+  margin: 0 10vw;
+  font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.alert-success {
+  height: 6vh;
+  background-color: rgb(26, 126, 39);
+  margin: 0 10vw;
+  font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.new-history {
+  background-color: #8ca1ff;
+  font-size: 20px;
+  font-weight: bold;
+  height: 5vh;
+  margin: 1vh 5vw;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
