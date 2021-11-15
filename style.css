@@ -120,8 +120,8 @@
 }
 
 .guess-history{
-  background-color: #16233b;
-  height: 40vh;
+  /* background-color: #16233b; */
+  height: 32vh;
   
     overflow-y:auto;
     overflow-x:hidden;
